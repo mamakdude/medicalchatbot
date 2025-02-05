@@ -15,10 +15,15 @@ Make sure Git is installed on your system.
 Run the following commands in your terminal or command prompt:
 
 pip install numpy
+
 pip install tensorflow
+
 pip install nltk
+
 pip install pickle
+
 pip install git+https://github.com/huggingface/transformers.git
+
 pip install accelerate
 
 🚀 Running the Chatbot
