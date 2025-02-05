@@ -1,0 +1,1185 @@
+{
+        "intents": [
+          {
+            "tag": "greeting",
+            "patterns": [
+              "Hi",
+              "How are you",
+              "Is anyone there?",
+              "Hello",
+              "Good day",
+              "Whats up"
+            ],
+            "responses": [
+              "Hello!",
+              "Good to see you again!",
+              "Hi there, how can I help?"
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "Disagree",
+            "patterns": [
+              "No",
+              "I did not",
+              "Should I?"
+            ],
+            "responses": [
+              "Yes, you should",
+              "You better do it, it better than nothing",
+              "Contact your nearest healthcare provider"
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "goodbye",
+            "patterns": [
+              "cya",
+              "See you later",
+              "Goodbye",
+              "I am Leaving",
+              "Have a Good day"
+            ],
+            "responses": [
+              "Sad to see you go :(",
+              "Talk to you later",
+              "Goodbye!"
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "symptoms",
+            "patterns": [
+              "I have a headache",
+              "I'm feeling nauseous",
+              "I have a fever",
+              "my stomach hurts"
+            ],
+            "responses": [
+              "I'm sorry to hear that. Have you tried taking any medication?",
+              "That sounds uncomfortable. Have you considered contacting a medical professional?"
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "firstaid",
+            "patterns": [
+              "What should I do for a cut",
+              "How do I treat a burn",
+              "What do I do for a sprain"
+            ],
+            "responses": [
+              "Clean the wound with soap and water, then cover it with a bandage. If the cut is deep, seek medical attention.",
+              "Run cold water over the burn for 10-15 minutes, then cover it with a sterile dressing. Seek medical attention if the burn is severe.",
+              "Rest, ice, compress, and elevate the sprain. If the swelling and pain persist, seek medical attention."
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "mentalhealth",
+            "patterns": [
+              "I'm feeling anxious",
+              "I'm feeling depressed",
+              "I'm having trouble sleeping"
+            ],
+            "responses": [
+              "I'm sorry to hear that. Have you considered speaking with a mental health professional?",
+              "That can be difficult. Have you tried any relaxation techniques, such as deep breathing or meditation?"
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "medications",
+            "patterns": [
+              "What medication should I take for a headache",
+              "What over-the-counter medication is good for fever",
+              "What medication can I take for pain relief"
+            ],
+            "responses": [
+              "Over-the-counter pain relievers such as ibuprofen or acetaminophen can be effective for headaches and fever. Follow the instructions on the label for dosage.",
+              "Acetaminophen or ibuprofen can also be used for pain relief. Follow the instructions on the label for dosage."
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "diagnosis",
+            "patterns": [
+              "What could be causing my symptoms",
+              "How do I know if I have a disease",
+              "What are the symptoms of a heart attack"
+            ],
+            "responses": [
+              "It's difficult to diagnose a condition without a medical professional's evaluation. Please seek medical attention for a proper diagnosis.",
+              "If you're experiencing symptoms, it's best to consult with a medical professional for a proper diagnosis."
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "treatments",
+            "patterns": [
+              "What are the treatment options for my condition",
+              "How do I manage my chronic illness",
+              "What are the side effects of this medication"
+            ],
+            "responses": [
+              "Treatment options vary depending on the condition. Please consult with a medical professional for personalized advice.",
+              "Managing a chronic illness requires a comprehensive plan. Please consult with a medical professional for guidance."
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "prevention",
+            "patterns": [
+              "How can I prevent illness",
+              "What are the best ways to stay healthy",
+              "How can I boost my immune system"
+            ],
+            "responses": [
+              "Preventing illness involves a combination of healthy habits, such as regular exercise, a balanced diet, and proper hygiene. Consult with a medical professional for personalized advice.",
+              "Staying healthy requires a comprehensive approach. Consult with a medical professional for guidance."
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "nutrition",
+            "patterns": [
+              "What are the best foods for my condition",
+              "How can I get enough nutrients",
+              "What are the benefits of a healthy diet"
+            ],
+            "responses": [
+              "A healthy diet is essential for overall health. Consult with a medical professional or a registered dietitian for personalized nutrition advice.",
+              "Getting enough nutrients requires a balanced diet. Consult with a medical professional or a registered dietitian for guidance."
+            ],
+            "context_set": "",
+            "deterministic": false
+          },
+          {
+            "tag": "chronic_conditions",
+            "patterns": [
+              "How can I manage diabetes",
+              "What are the treatment options for hypertension",
+              "How do I cope with chronic pain",
+              "What lifestyle changes can help with asthma",
+              "Can you give me advice on managing arthritis"
+            ],
+            "responses": [
+              "Managing diabetes involves monitoring blood sugar levels, maintaining a healthy diet, exercising regularly, and taking prescribed medications.",
+              "Treatment for hypertension includes lifestyle changes such as diet and exercise, as well as medications prescribed by a doctor.",
+              "Coping with chronic pain may involve medication, physical therapy, and alternative treatments like acupuncture or meditation.",
+              "Lifestyle changes for asthma include avoiding triggers, using prescribed inhalers, and maintaining a healthy weight.",
+              "Managing arthritis can include regular exercise, maintaining a healthy weight, using pain relief medications, and possibly physical therapy."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "emergency",
+            "patterns": [
+              "What should I do in case of a medical emergency",
+              "How do I get urgent medical help",
+              "Who should I call in a medical emergency",
+              "What number do I dial for an ambulance",
+              "I need emergency medical assistance"
+            ],
+            "responses": [
+              "In case of a medical emergency, call your local emergency number immediately. For most places, this is 911.",
+              "For urgent medical help, dial the emergency number for your area. In many regions, this is 911.",
+              "In a medical emergency, you should call 911 or your local emergency services number immediately.",
+              "Dial 911 for an ambulance if you are in the United States. Know your local emergency number if you are elsewhere.",
+              "If you need emergency medical assistance, call 911 or your local emergency number right away."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "exercise",
+            "patterns": [
+              "How often should I exercise",
+              "What are the benefits of regular exercise",
+              "Can you suggest a workout routine",
+              "What exercises are good for weight loss",
+              "How do I start a fitness program"
+            ],
+            "responses": [
+              "It is recommended to exercise at least 150 minutes per week. Consult with a fitness expert for a personalized routine.",
+              "Regular exercise improves cardiovascular health, boosts mood, and helps with weight management.",
+              "A balanced workout routine includes cardio, strength training, and flexibility exercises. Consult a trainer for specific plans.",
+              "For weight loss, combine aerobic exercises like running with strength training. Maintain a healthy diet for best results.",
+              "Start a fitness program by setting realistic goals, choosing activities you enjoy, and gradually increasing intensity."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "hydration",
+            "patterns": [
+              "How much water should I drink daily",
+              "What are the signs of dehydration",
+              "Can drinking water help with weight loss",
+              "Why is hydration important",
+              "What are the benefits of staying hydrated",
+              "Can you recommend ways to stay hydrated",
+              "What are the benefits of drinking water",
+              "How does hydration affect my health"
+            ],
+            "responses": [
+              "It's recommended to drink about 8 glasses of water a day, though needs vary by individual.",
+              "Signs of dehydration include dark urine, dry mouth, fatigue, and dizziness.",
+              "Drinking water can aid weight loss by increasing satiety and boosting metabolism.",
+              "Hydration is crucial for maintaining bodily functions, energy levels, and overall health.",
+              "Staying hydrated helps with digestion, circulation, temperature regulation, and joint lubrication.",
+              "Stay hydrated by drinking water regularly, eating water-rich foods, and carrying a water bottle with you.",
+              "Benefits of drinking water include improved digestion, skin health, and energy levels.",
+              "Proper hydration supports all bodily functions, including temperature regulation, joint lubrication, and nutrient transportation."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "sleep",
+            "patterns": [
+              "How much sleep do I need",
+              "What are the benefits of good sleep",
+              "How can I improve my sleep quality",
+              "What are the effects of sleep deprivation",
+              "Can you suggest a bedtime routine",
+              "Can you give tips for better sleep hygiene"
+            ],
+            "responses": [
+              "Adults typically need 7-9 hours of sleep per night. Individual needs can vary.",
+              "Good sleep improves concentration, mood, and overall health.",
+              "To improve sleep quality, maintain a regular sleep schedule, create a relaxing bedtime routine, and avoid screens before bed.",
+              "Sleep deprivation can lead to impaired memory, mood swings, and weakened immunity.",
+              "A good bedtime routine includes winding down activities like reading, dimming the lights, and avoiding caffeine.",
+              "Tips for better sleep hygiene include keeping a consistent sleep schedule, limiting screen time before bed, and creating a relaxing bedtime routine."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "skin_care",
+            "patterns": [
+              "How do I take care of my skin",
+              "What is the best skincare routine",
+              "How can I prevent acne",
+              "What are the benefits of using sunscreen",
+              "Can you recommend a moisturizer",
+              "What are common skin conditions"
+            ],
+            "responses": [
+              "Basic skin care includes cleansing, moisturizing, and using sunscreen. Tailor your routine to your skin type.",
+              "A good skincare routine involves cleansing, toning, moisturizing, and applying sunscreen.",
+              "Prevent acne by keeping your skin clean, avoiding oily products, and not touching your face frequently.",
+              "Sunscreen protects your skin from UV damage, reducing the risk of skin cancer and premature aging.",
+              "Choose a moisturizer suitable for your skin type. For dry skin, use a hydrating formula; for oily skin, a lightweight, non-comedogenic one.",
+              "Common skin conditions include eczema, psoriasis, and dermatitis."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "mental_health_support",
+            "patterns": [
+              "Where can I find mental health resources",
+              "How can I support a friend with depression",
+              "What are some mental health hotlines",
+              "Can therapy help with anxiety",
+              "What are some self-care tips for mental health"
+            ],
+            "responses": [
+              "You can find mental health resources through local healthcare providers, online directories, and support groups.",
+              "Support a friend with depression by listening without judgment and encouraging them to seek professional help.",
+              "Mental health hotlines include the National Suicide Prevention Lifeline and local crisis lines.",
+              "Therapy can be very effective for managing anxiety. Consider cognitive-behavioral therapy or other approaches.",
+              "Self-care tips for mental health include regular exercise, a healthy diet, adequate sleep, and mindfulness practices."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "allergies",
+            "patterns": [
+              "What are common allergy symptoms",
+              "How can I manage seasonal allergies",
+              "What medications are available for allergies",
+              "Can allergies be cured",
+              "What are the triggers for allergic reactions"
+            ],
+            "responses": [
+              "Common allergy symptoms include sneezing, itching, runny nose, and watery eyes.",
+              "Manage seasonal allergies by avoiding allergens, using antihistamines, and keeping windows closed during high pollen times.",
+              "Allergy medications include antihistamines, decongestants, and nasal corticosteroids.",
+              "Allergies cannot be cured, but symptoms can be managed with medications and avoiding triggers.",
+              "Common triggers for allergic reactions include pollen, dust mites, pet dander, mold, and certain foods."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "diet",
+            "patterns": [
+              "What is a balanced diet",
+              "How can I start eating healthy",
+              "What foods should I avoid",
+              "Can you give me healthy meal ideas",
+              "How do I maintain a healthy weight"
+            ],
+            "responses": [
+              "A balanced diet includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats.",
+              "Start eating healthy by incorporating more whole foods, reducing processed foods, and watching portion sizes.",
+              "Avoid foods high in added sugars, saturated fats, and trans fats. Limit processed foods and sugary drinks.",
+              "Healthy meal ideas include a grilled chicken salad, quinoa and vegetable stir-fry, and oatmeal with fresh fruit.",
+              "Maintain a healthy weight by balancing calorie intake with physical activity and making nutritious food choices."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "injuries",
+            "patterns": [
+              "How do I treat a sprained ankle",
+              "What should I do if I break a bone",
+              "How can I prevent sports injuries",
+              "What is the first aid for a concussion",
+              "How do I care for a bruise"
+            ],
+            "responses": [
+              "Treat a sprained ankle with rest, ice, compression, and elevation (RICE). Seek medical attention if severe.",
+              "If you suspect a broken bone, immobilize the area and seek medical attention immediately.",
+              "Prevent sports injuries by warming up, using proper equipment, and following safety guidelines.",
+              "First aid for a concussion includes rest and monitoring for symptoms like confusion or dizziness. Seek medical attention.",
+              "Care for a bruise by applying ice to reduce swelling and keeping the bruised area elevated."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "chronic_diseases",
+            "patterns": [
+              "What are the symptoms of diabetes",
+              "How do I manage high blood pressure",
+              "What is the treatment for chronic kidney disease",
+              "How can I reduce my risk of heart disease",
+              "What are common treatments for COPD"
+            ],
+            "responses": [
+              "Symptoms of diabetes include increased thirst, frequent urination, fatigue, and blurred vision.",
+              "Manage high blood pressure with a healthy diet, regular exercise, and prescribed medications.",
+              "Treatment for chronic kidney disease includes medications, diet changes, and possibly dialysis. Consult a nephrologist.",
+              "Reduce your risk of heart disease by maintaining a healthy diet, exercising regularly, not smoking, and managing stress.",
+              "Common treatments for COPD include bronchodilators, inhaled steroids, and pulmonary rehabilitation."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "pregnancy",
+            "patterns": [
+              "What are the early signs of pregnancy",
+              "How should I care for myself during pregnancy",
+              "What foods should I avoid during pregnancy",
+              "Can I exercise while pregnant",
+              "What are common pregnancy complications"
+            ],
+            "responses": [
+              "Early signs of pregnancy include missed periods, nausea, breast tenderness, and fatigue.",
+              "Care for yourself during pregnancy by eating a balanced diet, staying hydrated, and attending regular prenatal checkups.",
+              "Avoid foods like raw fish, unpasteurized dairy, and undercooked meats during pregnancy to reduce the risk of foodborne illness.",
+              "Yes, you can exercise while pregnant, but consult with your doctor to choose safe activities.",
+              "Common pregnancy complications include gestational diabetes, preeclampsia, and preterm labor. Regular checkups can help manage risks."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "child_health",
+            "patterns": [
+              "How can I boost my child's immune system",
+              "What are the signs of a healthy child",
+              "What vaccinations does my child need",
+              "How do I treat my child's fever",
+              "What are common childhood illnesses"
+            ],
+            "responses": [
+              "Boost your child's immune system with a balanced diet, regular exercise, adequate sleep, and proper hygiene.",
+              "Signs of a healthy child include steady growth, good appetite, regular sleep patterns, and active engagement.",
+              "Your child needs vaccinations according to the schedule recommended by your healthcare provider or public health authority.",
+              "Treat a child's fever with plenty of fluids, rest, and appropriate doses of fever-reducing medication. Consult a doctor if the fever is high or persistent.",
+              "Common childhood illnesses include colds, ear infections, chickenpox, and strep throat. Most can be managed with proper care."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "immunization",
+            "patterns": [
+              "Why are vaccinations important",
+              "What is herd immunity",
+              "How do vaccines work",
+              "Are there any risks associated with vaccines",
+              "What is the vaccination schedule for adults"
+            ],
+            "responses": [
+              "Vaccinations are important for preventing infectious diseases and protecting public health.",
+              "Herd immunity occurs when a high percentage of the population is vaccinated, reducing the spread of disease.",
+              "Vaccines work by stimulating the immune system to recognize and fight pathogens.",
+              "Vaccines are generally safe, with most side effects being mild and temporary. Serious side effects are rare.",
+              "The vaccination schedule for adults includes annual flu shots, tetanus boosters every 10 years, and other vaccines based on age and health conditions."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "covid19",
+            "patterns": [
+              "What are the symptoms of COVID-19",
+              "How can I protect myself from COVID-19",
+              "What should I do if I think I have COVID-19",
+              "Are there any treatments for COVID-19",
+              "Where can I get tested for COVID-19"
+            ],
+            "responses": [
+              "Symptoms of COVID-19 include fever, cough, and shortness of breath. Some people may experience loss of taste or smell.",
+              "Protect yourself from COVID-19 by wearing masks, practicing social distancing, and washing hands frequently.",
+              "If you think you have COVID-19, isolate yourself, contact a healthcare provider, and get tested.",
+              "Treatments for COVID-19 include supportive care, antiviral medications, and monoclonal antibodies. Consult a healthcare provider.",
+              "You can get tested for COVID-19 at healthcare facilities, testing sites, and some pharmacies. Check local resources for availability."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "eye_health",
+            "patterns": [
+              "How can I improve my vision",
+              "What are the signs of cataracts",
+              "How do I take care of my eyes",
+              "What foods are good for eye health",
+              "Can you recommend exercises for the eyes"
+            ],
+            "responses": [
+              "To improve vision, maintain a healthy diet, avoid straining your eyes, and have regular eye check-ups.",
+              "Signs of cataracts include cloudy vision, difficulty with night vision, and seeing halos around lights.",
+              "Take care of your eyes by wearing sunglasses, reducing screen time, and getting regular eye exams.",
+              "Foods good for eye health include leafy greens, fish rich in omega-3s, and colorful fruits and vegetables.",
+              "Eye exercises such as focusing on distant objects and blinking frequently can help reduce eye strain."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "dental_health",
+            "patterns": [
+              "How often should I brush my teeth",
+              "What is the best way to prevent cavities",
+              "How can I whiten my teeth naturally",
+              "What are the signs of gum disease",
+              "Can you recommend a good toothpaste"
+            ],
+            "responses": [
+              "Brush your teeth at least twice a day for two minutes each time, and floss daily.",
+              "Prevent cavities by brushing regularly, flossing, reducing sugary foods, and visiting the dentist regularly.",
+              "To whiten teeth naturally, try using baking soda or hydrogen peroxide, and avoid foods that stain teeth.",
+              "Signs of gum disease include red, swollen gums, bleeding while brushing, and bad breath.",
+              "A good toothpaste should contain fluoride and be recommended by dental professionals. Consult your dentist for personalized advice."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "sexual_health",
+            "patterns": [
+              "How can I prevent sexually transmitted infections",
+              "What are the symptoms of an STD",
+              "How often should I get tested for STDs",
+              "What are the benefits of using condoms",
+              "Can you provide information on birth control options"
+            ],
+            "responses": [
+              "Prevent sexually transmitted infections by using condoms, getting vaccinated, and having regular screenings.",
+              "Symptoms of STDs vary but can include sores, unusual discharge, and itching. Some STDs may have no symptoms.",
+              "It's recommended to get tested for STDs annually or more frequently if you have multiple partners or engage in high-risk behaviors.",
+              "Using condoms reduces the risk of STDs and unintended pregnancies. They are effective when used consistently and correctly.",
+              "Birth control options include hormonal methods, barrier methods, and long-acting reversible contraceptives. Consult with a healthcare provider for advice."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "aging",
+            "patterns": [
+              "How can I age healthily",
+              "What are common health issues in older adults",
+              "How do I maintain mental sharpness as I age",
+              "What exercises are good for seniors",
+              "Can you give me tips for healthy aging"
+            ],
+            "responses": [
+              "Healthy aging involves a balanced diet, regular exercise, mental stimulation, and regular health check-ups.",
+              "Common health issues in older adults include arthritis, heart disease, and cognitive decline. Regular medical care can help manage these conditions.",
+              "Maintain mental sharpness by engaging in activities like puzzles, reading, and learning new skills.",
+              "Good exercises for seniors include walking, swimming, and strength training. Always consult a doctor before starting a new exercise regimen.",
+              "Tips for healthy aging include staying socially active, eating a nutritious diet, exercising regularly, and managing stress."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "immunization",
+            "patterns": [
+              "Why are vaccinations important",
+              "What is herd immunity",
+              "How do vaccines work",
+              "Are there any risks associated with vaccines",
+              "What is the vaccination schedule for adults"
+            ],
+            "responses": [
+              "Vaccinations are important for preventing infectious diseases and protecting public health.",
+              "Herd immunity occurs when a high percentage of the population is vaccinated, reducing the spread of disease.",
+              "Vaccines work by stimulating the immune system to recognize and fight pathogens.",
+              "Vaccines are generally safe, with most side effects being mild and temporary. Serious side effects are rare.",
+              "The vaccination schedule for adults includes annual flu shots, tetanus boosters every 10 years, and other vaccines based on age and health conditions."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "rehabilitation",
+            "patterns": [
+              "What is physical therapy",
+              "How can I recover from surgery",
+              "What exercises are good for rehabilitation",
+              "Can you recommend a good physical therapist",
+              "What are the benefits of occupational therapy"
+            ],
+            "responses": [
+              "Physical therapy helps restore movement and function after an injury or surgery through exercises and manual techniques.",
+              "Recovery from surgery involves following your doctor's advice, participating in rehabilitation, and taking care of your overall health.",
+              "Good exercises for rehabilitation depend on the injury but often include gentle stretching, strengthening, and mobility exercises.",
+              "To find a good physical therapist, ask for recommendations from your doctor or check local healthcare facilities.",
+              "Occupational therapy helps individuals develop or regain the skills needed for daily living and working, improving overall quality of life."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "pet_health",
+            "patterns": [
+              "How often should I take my pet to the vet",
+              "What are common pet illnesses",
+              "How do I know if my pet is sick",
+              "What vaccinations do pets need",
+              "How can I keep my pet healthy"
+            ],
+            "responses": [
+              "Pets should visit the vet at least once a year for a check-up and vaccinations.",
+              "Common pet illnesses include dental disease, obesity, and skin infections.",
+              "Signs your pet may be sick include changes in behavior, appetite, or bathroom habits. Consult your vet if you notice any changes.",
+              "Pets need vaccinations for diseases like rabies, distemper, and parvovirus. Consult your vet for a vaccination schedule.",
+              "Keep your pet healthy with regular vet visits, a balanced diet, regular exercise, and proper grooming."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "herbal_remedies",
+            "patterns": [
+              "What are the benefits of herbal medicine",
+              "Can you recommend herbs for anxiety",
+              "Are there any risks with herbal remedies",
+              "How do I use herbal supplements",
+              "What are common herbs for colds"
+            ],
+            "responses": [
+              "Herbal medicine can offer benefits such as natural healing and fewer side effects. However, consult with a healthcare professional before use.",
+              "Common herbs for anxiety include chamomile, lavender, and valerian root.",
+              "Herbal remedies can interact with medications and may have side effects. Consult a healthcare provider before use.",
+              "Herbal supplements can be taken as teas, capsules, or tinctures. Follow the recommended dosages on the product labels.",
+              "Common herbs for colds include echinacea, elderberry, and ginger."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "travel_health",
+            "patterns": [
+              "How do I stay healthy while traveling",
+              "What vaccinations do I need for travel",
+              "How can I prevent traveler's diarrhea",
+              "What should I pack in a travel health kit",
+              "Are there any health risks in tropical countries"
+            ],
+            "responses": [
+              "Stay healthy while traveling by staying hydrated, eating safely, and getting plenty of rest.",
+              "Travel vaccinations depend on your destination. Common ones include hepatitis A and B, typhoid, and yellow fever.",
+              "Prevent traveler's diarrhea by drinking bottled water, avoiding raw foods, and practicing good hand hygiene.",
+              "A travel health kit should include medications, first aid supplies, hand sanitizer, and any personal prescriptions.",
+              "Health risks in tropical countries include malaria, dengue fever, and typhoid. Take preventive measures such as vaccinations and mosquito protection."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "first_aid_training",
+            "patterns": [
+              "Where can I take a first aid course",
+              "What is CPR",
+              "How do I perform the Heimlich maneuver",
+              "What are the basics of first aid",
+              "Can you recommend first aid apps"
+            ],
+            "responses": [
+              "First aid courses are available through organizations like the Red Cross and local health departments.",
+              "CPR, or cardiopulmonary resuscitation, is an emergency procedure to assist someone whose heart has stopped.",
+              "The Heimlich maneuver is used to dislodge objects from a choking person's airway by applying upward abdominal thrusts.",
+              "Basic first aid includes assessing the situation, calling for help, and providing care such as stopping bleeding or treating burns.",
+              "Recommended first aid apps include the Red Cross First Aid app and the St. John Ambulance app."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "alternative_therapies",
+            "patterns": [
+              "What is acupuncture",
+              "How does chiropractic care work",
+              "What are the benefits of yoga",
+              "Can massage therapy help with pain",
+              "What is aromatherapy"
+            ],
+            "responses": [
+              "Acupuncture involves inserting thin needles into specific points on the body to alleviate pain and treat various conditions.",
+              "Chiropractic care focuses on diagnosing and treating musculoskeletal issues, especially spine-related problems, through manual adjustments.",
+              "Yoga offers benefits such as improved flexibility, strength, and stress relief.",
+              "Massage therapy can help relieve pain by relaxing muscles, improving circulation, and reducing stress.",
+              "Aromatherapy uses essential oils from plants to promote health and well-being through inhalation or topical application."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "women_health",
+            "patterns": [
+              "What are the symptoms of menopause",
+              "How can I reduce menstrual cramps",
+              "What are common gynecological issues",
+              "How often should I get a mammogram",
+              "Can you give me tips for a healthy pregnancy"
+            ],
+            "responses": [
+              "Symptoms of menopause include hot flashes, night sweats, mood changes, and irregular periods.",
+              "Reduce menstrual cramps with heat therapy, over-the-counter pain relief, exercise, and staying hydrated.",
+              "Common gynecological issues include yeast infections, fibroids, and endometriosis.",
+              "Women over 40 should get a mammogram every 1-2 years, or as recommended by their doctor.",
+              "Tips for a healthy pregnancy include eating a balanced diet, taking prenatal vitamins, staying active, and avoiding harmful substances."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "men_health",
+            "patterns": [
+              "What are common health issues in men",
+              "How often should I get a prostate exam",
+              "What are the symptoms of low testosterone",
+              "How can I improve my sexual health",
+              "Can you give me tips for building muscle"
+            ],
+            "responses": [
+              "Common health issues in men include heart disease, prostate cancer, and depression.",
+              "Men should discuss prostate screening with their doctor starting at age 50, or earlier if they have risk factors.",
+              "Symptoms of low testosterone include fatigue, reduced libido, and mood changes.",
+              "Improve sexual health by maintaining a healthy lifestyle, managing stress, and communicating with your partner.",
+              "Tips for building muscle include regular strength training, eating a protein-rich diet, and getting enough rest."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "emotional_wellness",
+            "patterns": [
+              "How can I manage stress",
+              "What are the benefits of mindfulness",
+              "Can you recommend activities for relaxation",
+              "How do I improve my emotional intelligence",
+              "What are signs of good emotional health"
+            ],
+            "responses": [
+              "Manage stress by practicing relaxation techniques, staying active, and maintaining a healthy work-life balance.",
+              "Mindfulness can improve focus, reduce stress, and enhance emotional regulation.",
+              "Relaxation activities include meditation, deep breathing exercises, and spending time in nature.",
+              "Improve emotional intelligence by practicing self-awareness, empathy, and effective communication.",
+              "Signs of good emotional health include resilience, positive relationships, and the ability to cope with stress."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "vision",
+            "patterns": [
+              "How can I prevent eye strain",
+              "What are the benefits of wearing sunglasses",
+              "What is LASIK surgery",
+              "How do I choose the right glasses",
+              "What are common vision problems"
+            ],
+            "responses": [
+              "Prevent eye strain by taking regular breaks from screens, adjusting lighting, and practicing the 20-20-20 rule.",
+              "Wearing sunglasses protects your eyes from harmful UV rays and reduces the risk of cataracts and macular degeneration.",
+              "LASIK surgery is a procedure that corrects vision issues like myopia, hyperopia, and astigmatism using a laser.",
+              "Choose the right glasses by considering your prescription, lifestyle, and face shape. Consult an optometrist for advice.",
+              "Common vision problems include nearsightedness, farsightedness, astigmatism, and presbyopia."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "gastrointestinal_health",
+            "patterns": [
+              "How can I improve my digestion",
+              "What are the symptoms of IBS",
+              "How do I prevent constipation",
+              "What foods are good for gut health",
+              "Can you recommend a probiotic"
+            ],
+            "responses": [
+              "Improve digestion by eating a high-fiber diet, staying hydrated, and exercising regularly.",
+              "Symptoms of IBS (Irritable Bowel Syndrome) include abdominal pain, bloating, and changes in bowel habits.",
+              "Prevent constipation by eating fiber-rich foods, drinking plenty of water, and staying active.",
+              "Foods good for gut health include yogurt, kefir, sauerkraut, and high-fiber fruits and vegetables.",
+              "A good probiotic should contain diverse strains of beneficial bacteria. Consult a healthcare provider for recommendations."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "bone_health",
+            "patterns": [
+              "How can I strengthen my bones",
+              "What are the symptoms of osteoporosis",
+              "How do I get enough calcium",
+              "What exercises are good for bone health",
+              "Can you recommend supplements for bone health"
+            ],
+            "responses": [
+              "Strengthen your bones by consuming calcium and vitamin D, engaging in weight-bearing exercises, and avoiding smoking.",
+              "Symptoms of osteoporosis include back pain, loss of height, and easily fractured bones.",
+              "Get enough calcium by eating dairy products, leafy greens, and fortified foods.",
+              "Good exercises for bone health include weight lifting, walking, and resistance training.",
+              "Supplements for bone health may include calcium, vitamin D, and magnesium. Consult a healthcare provider for advice."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "hearing_health",
+            "patterns": [
+              "How can I protect my hearing",
+              "What are the signs of hearing loss",
+              "What are common causes of hearing loss",
+              "How do I choose hearing aids",
+              "Can you recommend hearing protection"
+            ],
+            "responses": [
+              "Protect your hearing by avoiding loud noises, using earplugs in noisy environments, and keeping the volume down on headphones.",
+              "Signs of hearing loss include difficulty understanding speech, needing to increase the volume on devices, and ringing in the ears.",
+              "Common causes of hearing loss include aging, exposure to loud noise, and infections.",
+              "Choose hearing aids based on your specific hearing needs, lifestyle, and budget. Consult an audiologist for advice.",
+              "Recommended hearing protection includes earplugs, earmuffs, and noise-canceling headphones."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "mental_health_support",
+            "patterns": [
+              "What are the benefits of therapy",
+              "How do I find a good therapist",
+              "What is cognitive behavioral therapy",
+              "How can I support a friend with depression",
+              "What are common mental health disorders"
+            ],
+            "responses": [
+              "Therapy can help improve mental health, coping skills, and overall well-being.",
+              "Find a good therapist by asking for recommendations, checking credentials, and scheduling initial consultations.",
+              "Cognitive Behavioral Therapy (CBT) is a type of therapy that helps people change negative thought patterns and behaviors.",
+              "Support a friend with depression by listening, encouraging them to seek help, and being there for them without judgment.",
+              "Common mental health disorders include depression, anxiety disorders, bipolar disorder, and schizophrenia."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "substance_abuse",
+            "patterns": [
+              "How can I get help for substance abuse",
+              "What are the signs of addiction",
+              "What treatment options are available for addiction",
+              "How do I support a loved one with addiction",
+              "What are the risks of drug abuse"
+            ],
+            "responses": [
+              "Get help for substance abuse by reaching out to a healthcare provider or contacting support groups and treatment centers.",
+              "Signs of addiction include changes in behavior, neglecting responsibilities, and withdrawal symptoms.",
+              "Treatment options for addiction include counseling, medication-assisted treatment, and inpatient or outpatient rehab programs.",
+              "Support a loved one with addiction by encouraging them to seek help, being supportive, and setting boundaries.",
+              "Risks of drug abuse include health problems, legal issues, and negative impacts on personal and professional relationships."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "heart_health",
+            "patterns": [
+              "How can I improve my heart health",
+              "What are the symptoms of a heart attack",
+              "What foods are good for heart health",
+              "How often should I get my cholesterol checked",
+              "Can you give me tips for lowering blood pressure"
+            ],
+            "responses": [
+              "Improve heart health by eating a balanced diet, exercising regularly, and avoiding smoking.",
+              "Symptoms of a heart attack include chest pain, shortness of breath, and pain in the arm or jaw. Seek medical attention immediately if you experience these symptoms.",
+              "Foods good for heart health include fruits, vegetables, whole grains, and lean proteins.",
+              "Get your cholesterol checked every 4-6 years, or more frequently if you have risk factors.",
+              "Tips for lowering blood pressure include reducing sodium intake, exercising regularly, and managing stress."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "vaccination_safety",
+            "patterns": [
+              "Are vaccines safe for children",
+              "What are the side effects of the flu vaccine",
+              "Can vaccines cause autism",
+              "How are vaccines tested for safety",
+              "Why do vaccines have side effects"
+            ],
+            "responses": [
+              "Vaccines are safe for children and are thoroughly tested before approval. The benefits far outweigh the risks.",
+              "Side effects of the flu vaccine can include soreness at the injection site, mild fever, and muscle aches.",
+              "There is no scientific evidence that vaccines cause autism. Extensive research has shown no link.",
+              "Vaccines undergo rigorous testing in multiple phases of clinical trials to ensure safety and effectiveness.",
+              "Vaccines may have side effects as they stimulate the immune system to build protection. Most side effects are mild and temporary."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+            "tag": "allergies",
+            "patterns": [
+              "What are common allergy symptoms",
+              "How can I manage my allergies",
+              "What are the best treatments for hay fever",
+              "Can you recommend allergy medications",
+              "What foods commonly cause allergies"
+            ],
+            "responses": [
+              "Common allergy symptoms include sneezing, itching, runny nose, and watery eyes.",
+              "Manage allergies by avoiding triggers, using antihistamines, and consulting with an allergist for personalized treatment.",
+              "Treatments for hay fever include antihistamines, nasal sprays, and avoiding pollen exposure.",
+              "Common allergy medications include antihistamines like cetirizine and loratadine, and nasal sprays like fluticasone.",
+              "Common food allergens include peanuts, tree nuts, dairy, eggs, soy, wheat, fish, and shellfish."
+            ],
+            "context_set": "",
+            "deterministic": true
+          },
+          {
+                "tag": "common_illnesses",
+                "patterns": [
+                  "What are common illnesses during [season]?",
+                  "What illnesses are going around right now?",
+                  "What are the symptoms of [common illness]?",
+                  "How can I avoid catching [common illness]?",
+                  "Is [common illness] contagious?"
+                ],
+                "responses": [
+                  "Common illnesses during [season] often include colds, flu, allergies, and seasonal infections. Symptoms can vary but may include fever, cough, sore throat, runny nose, and fatigue. Practice good hygiene, get vaccinated, and avoid close contact with sick individuals to reduce your risk of catching these illnesses."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "contagious_diseases",
+                "patterns": [
+                  "What are some contagious diseases?",
+                  "How do contagious diseases spread?",
+                  "What precautions should I take to avoid spreading a contagious disease?",
+                  "Can you provide information on [specific contagious disease]?",
+                  "Is it safe to be around someone with [specific contagious disease]?"
+                ],
+                "responses": [
+                  "Contagious diseases are illnesses that can be spread from person to person through various means such as respiratory droplets, contact with infected individuals, or contaminated surfaces. Precautions to prevent the spread of contagious diseases include practicing good hygiene (like handwashing), avoiding close contact with sick individuals, and following public health guidelines such as wearing masks and getting vaccinated."
+                ],
+                "context_set": "",
+                "deterministic": false
+        },
+        {
+                "tag": "diet_and_nutrition",
+                "patterns": [
+                  "What foods can boost my immune system?",
+                  "How do I maintain a healthy diet?",
+                  "Are there specific diets for managing certain illnesses?",
+                  "Can you recommend a diet plan for weight loss?",
+                  "What are some common nutritional deficiencies?"
+                ],
+                "responses": [
+                  "A balanced diet rich in fruits, vegetables, lean proteins, whole grains, and healthy fats can help support overall health and immunity. For managing specific illnesses, consulting a registered dietitian or healthcare professional for personalized dietary advice is recommended. Nutritional deficiencies can occur due to inadequate intake or absorption of certain nutrients and may require supplementation or dietary changes."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "recovery",
+                "patterns": [
+                  "How long does it take to recover from [illness]?",
+                  "What can I do to speed up my recovery?",
+                  "Are there any home remedies for [symptom]?",
+                  "When is it safe to return to work/school after being sick?",
+                  "Should I see a doctor if my symptoms persist?"
+                ],
+                "responses": [
+                  "Recovery time depends on the type and severity of the illness, as well as individual factors like overall health and immune function. Rest, hydration, nutritious food, and symptom management can help support the recovery process. If symptoms persist or worsen, it's advisable to seek medical attention for further evaluation and treatment."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "pregnancy_health",
+                "patterns": [
+                  "What are common health concerns during pregnancy?",
+                  "How can I stay healthy during pregnancy?",
+                  "Are there any medications or treatments safe to use during pregnancy?",
+                  "What should I do if I experience complications during pregnancy?",
+                  "Where can I find prenatal care services?"
+                ],
+                "responses": [
+                  "During pregnancy, it's important to attend regular prenatal check-ups, eat a balanced diet, take prenatal vitamins, and avoid harmful substances. Common health concerns may include nausea, fatigue, back pain, and gestational diabetes. Always consult a healthcare provider for personalized advice and care during pregnancy."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "stress_management",
+                "patterns": [
+                  "What are some effective stress management techniques?",
+                  "How does stress affect health?",
+                  "Can stress cause physical symptoms?",
+                  "Are there any relaxation techniques I can try?",
+                  "How do I know if I need professional help for stress?"
+                ],
+                "responses": [
+                  "Stress management techniques such as deep breathing, meditation, mindfulness, exercise, and spending time in nature can help reduce stress and promote overall well-being. Chronic stress can negatively impact both physical and mental health, leading to symptoms such as headaches, muscle tension, digestive problems, and insomnia. If stress becomes overwhelming or affects your daily functioning, consider seeking support from a healthcare professional, therapist, or counselor."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "acl_injury",
+                "patterns": [
+                  "What is an ACL injury?",
+                  "How does an ACL injury occur?",
+                  "What are the symptoms of an ACL tear?",
+                  "Is surgery necessary for an ACL tear?",
+                  "How long does it take to recover from an ACL injury?"
+                ],
+                "responses": [
+                  "An ACL injury is a tear or sprain of the anterior cruciate ligament, one of the major ligaments in the knee. It often occurs during sports activities that involve sudden stops, changes in direction, or direct impact to the knee. Symptoms may include pain, swelling, instability, and difficulty bearing weight on the affected knee. Treatment options vary depending on the severity of the injury and may include rest, physical therapy, and in some cases, surgery followed by rehabilitation. Recovery time can range from several weeks to several months, depending on the individual and the extent of the injury."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "acl_prevention",
+                "patterns": [
+                  "How can I prevent ACL injuries?",
+                  "Are there exercises to strengthen the ACL?",
+                  "What are some tips for avoiding ACL tears?",
+                  "Is it safe to return to sports after an ACL injury?",
+                  "Are ACL injuries more common in certain sports?"
+                ],
+                "responses": [
+                  "While it's not always possible to prevent ACL injuries entirely, there are steps you can take to reduce your risk. These include maintaining strong and flexible leg muscles, using proper technique and equipment during sports activities, warming up before exercise, and gradually increasing intensity and duration of physical activity. It's important to follow a structured rehabilitation program and get clearance from a healthcare professional before returning to sports after an ACL injury. Certain sports, such as soccer, basketball, and football, are associated with a higher risk of ACL injuries due to the dynamic movements involved."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "muscle_strains",
+                "patterns": [
+                  "What is a muscle strain?",
+                  "How does a muscle strain occur?",
+                  "What are the symptoms of a muscle strain?",
+                  "How long does it take to recover from a muscle strain?",
+                  "Are there exercises to prevent muscle strains?"
+                ],
+                "responses": [
+                  "A muscle strain occurs when muscle fibers stretch or tear, often due to overstretching or overuse. Symptoms may include pain, swelling, stiffness, weakness, and muscle spasms. Recovery time depends on the severity of the strain but may range from a few days to several weeks. Preventive measures include warming up before exercise, maintaining flexibility and strength, using proper technique, and avoiding overexertion. Stretching and strengthening exercises targeting the muscles prone to strain can also help reduce the risk."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "joint_sprains",
+                "patterns": [
+                  "What is a joint sprain?",
+                  "How does a joint sprain occur?",
+                  "What are the symptoms of a joint sprain?",
+                  "Is it safe to continue playing sports with a joint sprain?",
+                  "How can I prevent joint sprains?"
+                ],
+                "responses": [
+                  "A joint sprain occurs when ligaments, which connect bones in a joint, are stretched or torn. It often happens during sudden twisting or impact, causing pain, swelling, bruising, and limited range of motion. While mild sprains may improve with rest, ice, compression, and elevation (RICE), more severe sprains may require medical evaluation and treatment. Continuing to play sports with a sprained joint can worsen the injury and delay healing. Preventive measures include warming up before exercise, wearing supportive footwear, using proper technique, and gradually increasing intensity and duration of activity."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "concussions",
+                "patterns": [
+                  "What is a concussion?",
+                  "How do concussions occur?",
+                  "What are the symptoms of a concussion?",
+                  "What is the treatment for a concussion?",
+                  "When is it safe to return to sports after a concussion?"
+                ],
+                "responses": [
+                  "A concussion is a type of traumatic brain injury caused by a blow or jolt to the head or body, resulting in temporary disruption of brain function. Symptoms may include headache, dizziness, nausea, confusion, memory problems, and sensitivity to light or noise. Treatment involves rest, both physical and cognitive, to allow the brain to heal. It's important to follow a gradual return-to-play protocol under the guidance of a healthcare professional to ensure full recovery before resuming sports activities."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "overuse_injuries",
+                "patterns": [
+                  "What are overuse injuries?",
+                  "How do overuse injuries develop?",
+                  "What are common types of overuse injuries?",
+                  "How can overuse injuries be prevented?",
+                  "What should I do if I suspect an overuse injury?"
+                ],
+                "responses": [
+                  "Overuse injuries occur gradually over time due to repetitive stress on the body's tissues, often without adequate rest or recovery. Common types include tendinitis, stress fractures, and muscle strains. Preventive measures include proper conditioning, adequate rest, cross-training, using proper equipment, and listening to your body's signals of fatigue or pain. If you suspect an overuse injury, it's important to rest, apply ice, and seek evaluation from a healthcare professional to prevent further damage."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "acute_trauma",
+                "patterns": [
+                  "What is acute trauma?",
+                  "How do acute traumas occur?",
+                  "What are examples of acute traumas in sports?",
+                  "What are the immediate steps to take after an acute trauma?",
+                  "How can acute traumas be prevented?"
+                ],
+                "responses": [
+                  "Acute trauma refers to sudden and severe injuries that occur as a result of a single traumatic event, such as a collision, fall, or impact. Examples in sports may include fractures, dislocations, and severe ligament sprains. Immediate steps to take after an acute trauma include immobilizing the injured area, applying ice, elevating the injured limb, and seeking medical attention promptly. Preventive measures include using proper protective gear, following safety guidelines, and practicing good sportsmanship to minimize the risk of collisions or accidents."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "shin_splints",
+                "patterns": [
+                  "What are shin splints?",
+                  "How do shin splints occur?",
+                  "What are the symptoms of shin splints?",
+                  "Are there any exercises to prevent shin splints?",
+                  "How can I treat shin splints?"
+                ],
+                "responses": [
+                  "Shin splints, or medial tibial stress syndrome, are an overuse injury that occurs when the muscles and tendons around the shinbone become inflamed. They often result from repetitive stress on the shinbone and surrounding tissues, such as running or jumping on hard surfaces. Symptoms may include pain, tenderness, and swelling along the inner edge of the shinbone. Preventive measures include gradually increasing the intensity and duration of exercise, wearing appropriate footwear, and incorporating strength and flexibility exercises for the lower legs. Treatment may involve rest, ice, stretching, and modifying activity until symptoms improve."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "turf_toe",
+                "patterns": [
+                  "What is turf toe?",
+                  "How does turf toe occur?",
+                  "What are the symptoms of turf toe?",
+                  "How is turf toe treated?",
+                  "Can turf toe be prevented?"
+                ],
+                "responses": [
+                  "Turf toe is a sprain of the ligaments around the base of the big toe joint, often caused by hyperextension of the toe on artificial turf or other hard surfaces. Symptoms may include pain, swelling, and limited range of motion in the big toe. Treatment may involve rest, ice, compression, and elevation, as well as taping or bracing the toe to limit movement. In severe cases, immobilization or surgery may be necessary. Preventive measures include wearing supportive footwear, using proper technique, and maintaining strength and flexibility in the foot and ankle."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "rotator_cuff_injury",
+                "patterns": [
+                  "What is a rotator cuff injury?",
+                  "How do rotator cuff injuries occur in sports?",
+                  "What are the symptoms of a rotator cuff injury?",
+                  "What is the treatment for a rotator cuff injury?",
+                  "Can a rotator cuff injury heal on its own?"
+                ],
+                "responses": [
+                  "A rotator cuff injury involves damage to the muscles and tendons that stabilize the shoulder joint, often resulting from repetitive overhead motions or sudden forceful movements. Symptoms may include pain, weakness, and limited range of motion in the shoulder. Treatment may include rest, physical therapy, anti-inflammatory medications, and in some cases, surgery to repair the damaged tissue. While minor injuries may heal with conservative measures, more severe tears may require surgical intervention for optimal recovery."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "stress_fractures",
+                "patterns": [
+                  "What are stress fractures?",
+                  "How do stress fractures occur?",
+                  "What are the symptoms of a stress fracture?",
+                  "How are stress fractures diagnosed?",
+                  "What is the treatment for a stress fracture?"
+                ],
+                "responses": [
+                  "Stress fractures are small cracks or breaks in bones, commonly occurring due to repetitive stress or overuse. They often develop gradually over time, particularly in weight-bearing bones like the shins or feet. Symptoms may include localized pain, swelling, and tenderness, especially during physical activity. Diagnosis typically involves imaging tests such as X-rays or MRI scans. Treatment may include rest, immobilization, and gradual return to activity, along with addressing underlying factors such as biomechanical issues or training errors."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "patellofemoral_pain_syndrome",
+                "patterns": [
+                  "What is patellofemoral pain syndrome?",
+                  "How does patellofemoral pain syndrome occur?",
+                  "What are the symptoms of patellofemoral pain syndrome?",
+                  "Is there a cure for patellofemoral pain syndrome?",
+                  "What treatments are available for patellofemoral pain syndrome?"
+                ],
+                "responses": [
+                  "Patellofemoral pain syndrome, also known as runner's knee, is a common knee condition characterized by pain around the kneecap (patella), particularly during activities like running, squatting, or climbing stairs. It often results from overuse, muscle imbalances, or biomechanical issues affecting the patellofemoral joint. Symptoms may include dull, aching pain in the front of the knee, especially with prolonged sitting or physical activity. While there is no specific cure for patellofemoral pain syndrome, treatment typically involves rest, physical therapy, strengthening exercises, and addressing contributing factors such as improper footwear or training errors."
+                ],
+                "context_set": "",
+                "deterministic": false
+              },
+              {
+                "tag": "ankle_sprains",
+                "patterns": [
+                  "What is an ankle sprain?",
+                  "How do ankle sprains occur?",
+                  "What are the symptoms of an ankle sprain?",
+                  "Can you walk on an ankle sprain?",
+                  "How long does it take to recover from an ankle sprain?"
+                ],
+                "responses": [
+                  "An ankle sprain occurs when the ligaments that support the ankle stretch or tear, often due to sudden twisting or rolling of the foot. Symptoms may include pain, swelling, bruising, and difficulty bearing weight on the affected ankle. While mild sprains may improve with rest, ice, compression, and elevation (RICE), more severe sprains may require medical evaluation and treatment. Recovery time varies depending on the severity of the sprain, but it typically ranges from a few days to several weeks, with physical therapy often recommended to restore strength and stability to the ankle."
+                ],
+                "context_set": "",
+                "deterministic": false
+              }
+        ]
+}
