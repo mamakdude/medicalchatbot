@@ -28,10 +28,10 @@ pip install accelerate
 
 🚀 Running the Chatbot
 Clone the Repository
-git clone https://github.com/mamakdude/medical-chatbot.git
-cd medical-chatbot
+git clone https://github.com/mamakdude/medicalchatbot.git
+cd medicalchatbot
 Run Initial Setup
-python new.py
+python TrainModel.py
 Start the Chatbot
 python chat.py
 
